@@ -1,20 +1,23 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints chessboard.
- * @a: matrix
+ * main - prints chessboard.
+ * Return: 0
  */
 
-void print_chessboard(char (*a)[8])
+int main(void)
 {
-	int i, j;
+	chessboard[8][8] = {
+		{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+		{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+		{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+	};
+	print_chessboard(board);
 
-	for (i = 0; i < 8; i++)
-	{
-		for (j = 0; j < 8; j++)
-		{
-			_putchar(*(*(i + a) + j));
-		}
-		_putchar('\n');
-	}
+	return (0);
 }
