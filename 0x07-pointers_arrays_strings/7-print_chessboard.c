@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * main - prints chessboard.
- * Return: 0
+ * *print_chessboard - description
+ * @a: board
+ * Return: void
  */
-
-int main(void)
+void print_chessboard(char (*a)[8])
 {
-	chessboard[8][8] = {
-		{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
-		{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
-		{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
-	};
-	print_chessboard(board);
+	int i, j;
 
-	return (0);
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
+	}
 }
