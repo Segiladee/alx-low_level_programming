@@ -2,10 +2,10 @@
 #define MAIN_H
 
 int _putchar(char c);
-char _islower(char c);
+int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
-char _isupper(char c);
+int _isupper(int c);
 int _isdigit(int c);
 int _strlen(char *s);
 void _puts(char *s);
